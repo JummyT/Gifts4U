@@ -1,0 +1,54 @@
+main {
+    padding: 20px;
+}
+
+main #category-buttons input[type="radio"] {
+    display: none;
+}
+
+main #category-buttons label {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+}
+
+main #category-buttons input[type="radio"]:checked + label {
+    color: var(--jade);
+        text-decoration: underline;
+}
+
+main #content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 8px;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+main #content #card {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background: var(--white);
+    border-radius: 4px;
+}
+
+main #content #card:hover {
+    box-shadow: 2px -2px 24px -15px rgba(red, green, blue, alpha);
+}
+
+main #content #card img {
+    width: none;
+    height: none;
+    object-fit: none;                                                   ;
+    border: 2px solid;
+}
+
+@media screen and (max-width: 768px) { 
+    main #content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+}

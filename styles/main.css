@@ -1,0 +1,54 @@
+:root {
+    --crimson: #900000;
+    --jade: #04A777;
+    --green: #065143;
+    --redviolet: #dfdfdf;
+    --buff: #e0a890;
+    --white: #fff;
+    
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    background: var(--redviolet);
+    padding-top: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: var(--white);
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    width: 96%;
+
+}
+
+header h1 {
+    font-size: 24px;
+    color: var(--crimson);
+}
+
+header #links {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header #links a{
+    text-decoration: none;
+    color: var(--green);
+    font-size: 18px;
+}
+
+header #links a:hover {
+    text-decoration: underline;
+}
